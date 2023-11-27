@@ -1,0 +1,24 @@
+{
+  "name": "node_websocket",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "date-utils": "^1.2.21",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^4.6.0",
+    "https": "^1.0.0",
+    "keydown": "^0.0.3",
+    "keypress": "^0.2.1",
+    "letsencrypt-express": "^2.0.7",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "socket.io": "^4.3.1",
+    "ws": "^8.5.0"
+  }
+}
