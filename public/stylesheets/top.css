@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  font-size: 40px;
+  background-color: white;
+  align-items: center;
+  visibility: hidden;
+}
+
+.setup{
+  z-index:1;
+  position: absolute;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.movie {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:0;
+}
+
+.movie video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%,-50%);
+}
+
+.contain {
+  position: absolute;
+  bottom: 0;
+  /* width: 20rem;
+  height: 20rem; */
+  /* transform: translate(0, -50%); */
+  pointer-events: none; 
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* 要素を横に並べる */
+  justify-content: space-evenly; /* 要素を均等間隔に分散させる */
+  visibility: hidden;
+}
+ 
+
+
+
+.item {
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  padding: 4px;
+}
+
+.item_label {
+  white-space: nowrap;
+}
+
+.item1 {
+  background-color: #e24949;
+  width: 0%;
+  font-size: 60px;
+  color: #EEEEEE;
+}
+
+.item2 {
+  background-color: #324de6;
+  width: 0%;
+  font-size: 60px;
+  color: #EEEEEE;
+}
+
+
+p {
+  color: #EEEEEE;
+}
+

@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+body, html {
+  font-family: 'Press Start 2P', cursive;
+  -webkit-font-smoothing: none;
+  background: #212121;
+  color:  #212121;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  cursor: crosshair; }
+
+h1 {
+  font-size: 1.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-shadow: 0 0.25em 0 rgba(0, 0, 0, 0.5); }
+
+.container {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  pointer-events: none; }
+  .container:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0, 0, 0, 0.25);
+    transform: rotate(45deg);
+    outline: 10px solid rgba(0, 0, 0, 0.1); }
+  .container:nth-child(4n):before, .container:nth-child(7n):before {
+    display: none; }
+
+.particle {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0; }
+  .particle:nth-child(1) .sparcle {
+    animation-delay: 0ms; }
+  .particle:nth-child(2) .sparcle {
+    animation-delay: 50ms; }
+  .particle:nth-child(3) .sparcle {
+    animation-delay: 100ms; }
+  .particle:nth-child(4) .sparcle {
+    animation-delay: 150ms; }
+  .particle:nth-child(5) .sparcle {
+    animation-delay: 200ms; }
+  .particle:nth-child(6) .sparcle {
+    animation-delay: 250ms; }
+  .particle:nth-child(7) .sparcle {
+    animation-delay: 300ms; }
+  .particle:nth-child(8) .sparcle {
+    animation-delay: 350ms; }
+  .particle:nth-child(9) .sparcle {
+    animation-delay: 400ms; }
+  .particle:nth-child(10) .sparcle {
+    animation-delay: 450ms; }
+  .particle:nth-child(11) .sparcle {
+    animation-delay: 500ms; }
+  .particle:nth-child(12) .sparcle {
+    animation-delay: 550ms; }
+  .particle:nth-child(13) .sparcle {
+    animation-delay: 600ms; }
+  .particle:nth-child(14) .sparcle {
+    animation-delay: 650ms; }
+  .particle:nth-child(15) .sparcle {
+    animation-delay: 700ms; }
+  .particle:nth-child(16) .sparcle {
+    animation-delay: 750ms; }
+  .particle:nth-child(17) .sparcle {
+    animation-delay: 800ms; }
+  .particle:nth-child(18) .sparcle {
+    animation-delay: 850ms; }
+  .particle:nth-child(19) .sparcle {
+    animation-delay: 900ms; }
+  .particle:nth-child(20) .sparcle {
+    animation-delay: 950ms; }
+  .particle:nth-child(21) .sparcle {
+    animation-delay: 1000ms; }
+
+.sparcle {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(228, 249, 250, 0);
+  will-change: transform, box-shadow, background-color;
+  transform: rotate(45deg) scale(0.5) translateZ(0);
+  animation: explode 333ms;
+  box-shadow: 0 0 0 0 #fde655; }
+
+@keyframes explode {
+  0% {
+    background-color: #e4f9fa;
+    transform: rotate(45deg) scale(1.2) translateZ(0);
+    box-shadow: 0 0 0 0 #fde655; }
+  40% {
+    background-color: rgba(228, 249, 250, 0.1); }
+  50% {
+    transform: rotate(45deg) scale(1) translateZ(0);
+    box-shadow: 0 0 0 10px #fde655;
+    background-color: rgba(228, 249, 250, 0); }
+  60% {
+    box-shadow: 0 0 0 50px #d47946;
+    transform: rotate(45deg) scale(0.5) translateZ(0); }
+  70% {
+    background-color: rgba(228, 249, 250, 0);
+    box-shadow: 0 0 0 30px #7a2c1f; }
+  100% {
+    background-color: #7a2c1f;
+    box-shadow: 0 0 0 0 #7a2c1f;
+    transform: rotate(45deg) scale(0.25) translateZ(0); } }
+
+/*# sourceMappingURL=explosion.css.map */
