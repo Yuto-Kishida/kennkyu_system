@@ -1,0 +1,5 @@
+julius_python.pyの説明
+
+目的：
+juliusで受け取ったデータをpythonにて取得
+取得したデータはそのまま指導者用のシステム(node_websocket)に送信 
