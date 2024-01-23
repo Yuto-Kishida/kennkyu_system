@@ -18,3 +18,14 @@ public：システムの表示に関わるファイル
     ・top.css：大体全部のcss
 log.csv：コメントのログファイル
 index.html：表示画面
+
+
+google_speech_recognizer説明
+
+目的：
+１：音声認識のフィルタリング、閾値の設定
+　→特定のコメント以外は反応しないように設定
+２：音声認識されたコメントデータの送信
+
+本システムで使用されるのはgoogle_speech_recognizer jp.py
+
