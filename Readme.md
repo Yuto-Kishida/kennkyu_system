@@ -29,3 +29,4 @@ google_speech_recognizer説明
 
 本システムで使用されるのはgoogle_speech_recognizer jp.py
 
+system_short.mp4は実際に提案システムを用いて、オンライントレーニングを行った際の映像である
